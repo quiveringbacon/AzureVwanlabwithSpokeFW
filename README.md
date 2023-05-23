@@ -1,6 +1,6 @@
 # Azure Vwan lab with Spoke FW
 
-This creates a vwan with a hub and a couple of spoke vnets with VM's and a firewall vnet all connected to the vhub. All internet traffic is pointed to the Azure firewall in the firewall vnet. You'll be prompted for the resource group name, location where you want the resources created, your public ip and username and password to use for the VM's. NSG's are placed on the default subnets of each vnet allowing RDP access from your public ip and route tables are added sending traffic to your public ip to the internet.
+This creates a vwan with a hub and a couple of spoke vnets with VM's and a firewall vnet all connected to the vhub. All internet traffic is pointed to the Azure firewall in the firewall vnet. You'll be prompted for the resource group name, location where you want the resources created, your public ip and username and password to use for the VM's. NSG's are placed on the default subnets of each vnet allowing RDP access from your public ip and route tables are added sending traffic to your public ip to the internet. This also creates a logic app that will delete the resource group in 24hrs.
 
 The topology will look like this:
 
